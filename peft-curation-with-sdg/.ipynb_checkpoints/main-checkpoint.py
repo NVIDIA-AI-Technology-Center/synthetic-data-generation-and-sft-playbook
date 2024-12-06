@@ -296,7 +296,7 @@ def run_pipeline(args, jsonl_fp):
             "max_tokens": 1024,
             "seed": 1234,
         },
-        reward_model="nvidia/nemotron-4-340b-reward",
+        reward_model="nvdev/nvidia/nemotron-4-340b-reward",
         n_variants=synth_n_variants,
     )
 
@@ -359,8 +359,8 @@ def main():
     parser.add_argument(
         "--synth-gen-model",
         type=str,
-        default="nvidia/nemotron-4-340b-instruct",
-        choices=["nvidia/nemotron-4-340b-instruct", "meta/llama-3.1-405b-instruct", ""],
+        default="nvdev/nemotron-4-340b-instruct",
+        choices=["nvidia/nemotron-4-340b-instruct", "meta/llama-3.1-405b-instruct", "nvdev/nvidia/nemotron-4-340b-instruct"],
         help="The model from build.nvidia.com to use for synthetic data generation. Leave blank to skip synthetic data generation.",
     )
     parser.add_argument(
