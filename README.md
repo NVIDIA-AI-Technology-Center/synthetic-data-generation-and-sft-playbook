@@ -9,7 +9,7 @@ The process of fine-tuning a Llama 3.1 model-instruct using a synthetic enriched
 
 ## Data Preparation
 
-First, the original law-stackexchange-questions-answers dataset is obtained from Higging Face and preprocessed. This dataset contains questions and answers related to legal topics. The data is then split into training, validation, and test sets.
+First, the original law-stackexchange-questions-answers dataset is obtained from Hugging Face and preprocessed. This dataset contains questions and answers related to legal topics. The data is then split into training, validation, and test sets.
 
 ## Synthetic Data Generation
 Using Nemotron-4-340B-instruct via NIM, synthetic data is generated to augment the original dataset. The model is prompted to create additional question-answer pairs that mimic the style and content of the law-stackexchange data. This step leverages the large-scale knowledge of Nemotron-4-340B-instruct to create diverse and relevant examples.
