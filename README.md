@@ -16,7 +16,7 @@ Using Nemotron-4-340B-instruct via NIM, synthetic data is generated to augment t
 
 ## Data Filtering and Quality Control
 
-The generated synthetic data is then passed through the Nemotron 4 340B reward model. This model acts as a quality filter, evaluating the relevance and coherence of the generated question-answer pairs4. Low-quality or irrelevant pairs are discarded, ensuring that only high-quality synthetic data is retained.
+The generated synthetic data is then passed through the Nemotron 4 340B reward model. This model acts as a quality filter, evaluating the relevance and coherence of the generated question-answer pairs. Low-quality or irrelevant pairs are discarded, ensuring that only high-quality synthetic data is retained.
 
 ## Dataset Combination
 The filtered synthetic data is combined with the original law-stackexchange dataset. This enriched dataset now contains both real and high-quality synthetic examples, providing a more comprehensive training set for fine-tuning.
